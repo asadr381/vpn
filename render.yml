@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: react-search-app
+    env: static
+    staticPublishPath: build
+    buildCommand: npm install && npm run build
+    publishPath: /
+    branch: main # or your preferred branch
